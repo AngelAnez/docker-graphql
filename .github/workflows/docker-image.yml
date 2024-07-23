@@ -28,8 +28,10 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t angelanez/docker-graphql:0.0.2 .
+        docker build -t angelanez/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push angelanez/docker-graphql:0.0.2
+        docker push angelanez/docker-graphql:latest
 
